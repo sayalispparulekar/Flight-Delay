@@ -1,0 +1,32 @@
+Each entry of the `flights.csv` file corresponds to a flight and we see that more than 5'800'000 flights have been recorded in 2015. These flights are described according to 31 variables. A description of these variables can be found [here](https://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=236&DB_Short_Name=On-Time) and I briefly recall the meaning of the variables that will be used in this notebook:
+
+flights.csv
+
+YEAR, MONTH, DAY, DAY_OF_WEEK: dates of the flight
+AIRLINE: An identification number assigned by US DOT to identify a unique airline
+ORIGIN_AIRPORT and DESTINATION_AIRPORT: code attributed by IATA to identify the airports 
+SCHEDULED_DEPARTURE and SCHEDULED_ARRIVAL : scheduled times of take-off and landing 
+DEPARTURE_TIME and ARRIVAL_TIME: real times at which take-off and landing took place 
+DEPARTURE_DELAY and ARRIVAL_DELAY: difference (in minutes) between planned and real times 
+DISTANCE: distance (in miles)  
+
+An additional file of this dataset, the `airports.csv` file, gives a more exhaustive description of the airports.
+
+To have a global overview of the geographical area covered in this dataset, we can plot the airports location and indicate the number of flights recorded during year 2015 in each of them.
+
+
+
+airlines.csv
+
+IATA_CODE : Airline Identifier
+AIRLINE : Airport's Name
+
+airports.csv
+
+IATA_CODE : Location Identifier
+AIRPORT : Airport's Name
+CITY : Atlanta
+STATE : Georgia
+COUNTRY : Country Name of the Airport
+LATITUDE : Latitude of the Airport
+LONGITUDE : Longitude of the Airport
